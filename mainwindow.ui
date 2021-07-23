@@ -1,0 +1,1739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>575</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BookAndQuill++</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#centralwidget{
+	border-image:url(:/new/image/vg3zn-7y9nd.gif);
+}
+QPushButton 
+{
+	width : 60px;
+	height : 60px;
+}
+QFrame{
+	background-color:rgba(235, 235, 235, 170);
+}
+QStackedWidget&gt;QWidget{
+	background-color:rgba(235, 235, 235, 20);
+}
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>480</y>
+      <width>801</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QWidget" name="horizontalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>10</y>
+       <width>631</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="btnPainting">
+        <property name="toolTip">
+         <string>画廊</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#btnPainting {
+    border-image: url(:/new/image/a6zpt-ykjoz.gif)
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnMap">
+        <property name="toolTip">
+         <string>地图</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border-image : url(:/new/image/s0en4d8rd5yb045j781z26rwvp8u8ha.png);
+}
+QPushButton:hover{
+	border-image : url(:/new/image/gz2t4gsocmvkv19lveot299073fpk8r.png);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnBookAndQuill">
+        <property name="toolTip">
+         <string>书与笔</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#btnBookAndQuill{
+	border-image : url(:/new/image/Book_and_Quill_JE2_BE2.gif)
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnBook">
+        <property name="toolTip">
+         <string>成书</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+    border-image: url(:/new/image/aabef-ibehw.gif);
+}
+QPushButton:hover{
+	border-image: url(:/new/image/written_book.gif);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnCompass">
+        <property name="toolTip">
+         <string>磁石</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#btnCompass{
+	border-image : url(:/new/image/adelc-guztg.gif)
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnEndPortal">
+        <property name="toolTip">
+         <string>要塞</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border-image : url(:/new/image/n8g7y310szq7wdl4swa8r3d3rzvds4o.png);
+}
+QPushButton:hover{
+	border-image : url(:/new/image/oyk9bfku1rs6yw2rso2sa9jm2zrhmgj.png);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnAnvil">
+        <property name="toolTip">
+         <string>铁砧</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border-image : url(:/new/image/mlf5m3ef0r6y1502wgs07kau426sf43.png);
+}
+QPushButton:hover{
+	border-image : url(:/new/image/7j0fyku0erfl8dtxh21hu45187mmtki.png);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnBookShelf">
+        <property name="toolTip">
+         <string>书架</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#btnBookShelf{
+	border-image :url(:/new/image/a0ma4-13ii4.gif);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="btnStart">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>10</y>
+       <width>71</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>开始游戏</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#btnStart{
+	border-image : url(:/new/image/8wsl5br2a4p0p5lki12iz2kllngxxes.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>571</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#labelMapPicture{
+	border-image :url(:/new/image/Coordinates.gif);
+	background-color : transparent;
+}
+QWidget#pageMap QLabel{
+	background-color : transparent;
+}
+QWidget#pageMap QEditLine{
+	background-color :rgb(149, 161, 154);
+}
+QLabel{
+	background-color: transparent
+}
+QWidget#pageAnvil QPushButton{
+	border-image : url(:/new/image/4rnnp6ddc0g92yc2dm2r0t8ncaafqg6.gif);
+}</string>
+    </property>
+    <property name="currentIndex">
+     <number>5</number>
+    </property>
+    <widget class="QWidget" name="pagePainting">
+     <widget class="QLabel" name="labelRecentPicture1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>261</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelRecentPicture2">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>30</y>
+        <width>261</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelRecentPicture3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>220</y>
+        <width>261</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelRecentPicture4">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>220</y>
+        <width>261</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pageMap">
+     <widget class="QLineEdit" name="leMapX">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>100</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leMapY">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>140</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leMapZ">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>180</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelMapX">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>31</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>x</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelMapY">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>130</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>y</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelMapZ">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>170</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>z</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelMapPicture">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>60</y>
+        <width>331</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>未来功能</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnMapSave">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>230</y>
+        <width>71</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>记录</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btnMapSave{
+	border-image :url(:/new/image/Book_and_Quill_JE2_BE2.gif);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="shortcut">
+       <string>Enter</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelMapId">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>72</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>id</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leMapId">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>60</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnMapFile">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>320</y>
+        <width>71</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>成书</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btnMapFile{
+	border-image: url(:/new/image/written_book.gif);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnPaper_4">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>270</y>
+        <width>71</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>新的纸张</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btnPaper_4{
+	border-image : url(:/new/image/paper.png)
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pageBookAndQuill">
+     <widget class="QPushButton" name="btnSign">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>290</y>
+        <width>81</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>署名</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btnSign{
+	border-image : url(:/new/image/Feather_JE3_BE2.gif);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelBAQpicture">
+      <property name="geometry">
+       <rect>
+        <x>-9</x>
+        <y>-6</y>
+        <width>461</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#labelBAQpicture
+{
+	border-image : url(:/new/image/book_and_quill.png);
+	background-color : transparent;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="ptxBookAndQuill">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>30</y>
+        <width>321</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPlainTextEdit
+{
+	background-color : transparent;
+	border : none;
+}</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnInk">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>180</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>多样化墨水</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btnInk{
+	border-image : url(:/new/image/Ink_Sac_JE2_BE2.gif)
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnBAQBook">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>80</y>
+        <width>71</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>成书</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btnBAQBook{
+	border-image: url(:/new/image/written_book.gif);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pageBook">
+     <widget class="QLabel" name="labelBook">
+      <property name="geometry">
+       <rect>
+        <x>-9</x>
+        <y>-6</y>
+        <width>461</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#labelBook
+{
+	border-image : url(:/new/image/book_and_quill.png);
+	background-color : transparent;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="tbBook">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>30</y>
+        <width>321</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextBrowser
+{
+	background-color : transparent;
+	border : none;
+}</string>
+      </property>
+      <property name="openExternalLinks">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnPaper">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>80</y>
+        <width>71</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>新的纸张</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btnPaper{
+	border-image : url(:/new/image/paper.png)
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnBack">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>210</y>
+        <width>71</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>返回</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image : url(:/new/image/ahus9-5yxkl.gif)
+}
+QPushButton:hover{
+	border-image : url(:/new/image/pgnuqeh1hpt0rppezolluujluiylh0k.gif);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pageMileStone">
+     <widget class="QLineEdit" name="leHomeX">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>100</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leHomeY">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>140</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leHomeZ">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>180</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>x</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>130</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>y</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>170</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>z</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnLandStoneSave">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>150</y>
+        <width>71</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>记录</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btnLandStoneSave{
+	border-image : url(:/new/image/Book_and_Quill_JE2_BE2.gif);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="shortcut">
+       <string>Enter</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>21</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>id</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leHomeId">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>60</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnHomeFile">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>270</y>
+        <width>71</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>成书</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btnHomeFile{
+	border-image: url(:/new/image/written_book.gif);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnPaper_3">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>50</y>
+        <width>71</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>新的纸张</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btnPaper_3{
+	border-image : url(:/new/image/paper.png)
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelWanderer">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>140</y>
+        <width>311</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>未来功能</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#labelWanderer{
+	border-image:url(:/new/image/n0ahv1ho2p2y8gdelh2zvqeaihmwh08.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pageEndPortal">
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>131</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>第一位置</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>130</y>
+        <width>131</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>第二位置</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>230</y>
+        <width>131</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>第三位置</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le0">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>20</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le4">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>120</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le8">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>220</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le1">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le5">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>120</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le9">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>220</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>330</y>
+        <width>131</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>要塞坐标：</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leStrongHoldZ">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>340</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leStrongHoldX">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>340</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnPortalHelp">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>300</y>
+        <width>71</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btnPortalHelp{
+	border-image: url(:/new/image/written_book.gif);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le2">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>60</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le3">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>60</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le6">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>160</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le7">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>160</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le10">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>260</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le11">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>260</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnEyeOfEnder">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>180</y>
+        <width>71</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/new/image/6tokty4oshann9iqtqybwvzllfvmm8n.png);
+}
+QPushButton:hover{
+	border-image: url(:/new/image/eye_of_ender.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="shortcut">
+       <string>Enter</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnPaper_2">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>70</y>
+        <width>71</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btnPaper_2{
+	border-image : url(:/new/image/paper.png)
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pageAnvil">
+     <widget class="QLineEdit" name="lePicture">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>70</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leLocation">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>130</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leBookAndQuill">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>190</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnFile_1">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>70</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btnFile_1{
+	border-color : 
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnFile_2">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>130</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnFile_3">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>190</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>131</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>截图保存路径</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>131</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>坐标保存路径</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>180</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>书与笔保存路径</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leStart">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>310</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>300</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>启动器路径</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnFile_4">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>310</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btnFile_4{
+	border-image: url(:/new/image/rs8xd3zg0s4txqi4kgfp3bzu3pbdmht.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>240</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>书架路径</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnFile_5">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>250</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leBookShelf">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>250</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame#frame_3{
+	background-color:#61B5B7;
+}
+QLabel{
+	background-color:transparent;
+}
+QLabel#labelIcon{
+	border-image:url(:/new/image/Book_and_Quill_JE2_BE2.gif)
+}
+QToolButton{
+	background-color: transparent;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="labelIcon">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>10</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelIconWord">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>10</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>书与笔++</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btnMin">
+     <property name="geometry">
+      <rect>
+       <x>690</x>
+       <y>10</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="assets/resource.qrc">
+       <normaloff>:/new/image/noun_min_3165124.svg</normaloff>:/new/image/noun_min_3165124.svg</iconset>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btnClose">
+     <property name="geometry">
+      <rect>
+       <x>740</x>
+       <y>10</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="assets/resource.qrc">
+       <normaloff>:/new/image/noun_Close_2824374.svg</normaloff>:/new/image/noun_Close_2824374.svg</iconset>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>60</y>
+      <width>231</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	background-color :  transparent;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="labelLocation1">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>40</y>
+       <width>101</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="textInteractionFlags">
+      <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelLocation2">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>90</y>
+       <width>101</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="textInteractionFlags">
+      <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelLocation3">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>140</y>
+       <width>101</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="textInteractionFlags">
+      <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelHome4">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>230</y>
+       <width>101</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="textInteractionFlags">
+      <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnWiki">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>300</y>
+       <width>71</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>wiki</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#btnWiki{
+	border-image : url(:/new/image/Grass_Block_JE7_BE6.gif);
+	background-color : transparent;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelId1">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>81</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>坐标1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelId2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>71</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>坐标2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelId3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>140</y>
+       <width>72</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>坐标3</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelId4">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>230</y>
+       <width>72</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>家坐标</string>
+     </property>
+    </widget>
+   </widget>
+   <zorder>frame_3</zorder>
+   <zorder>stackedWidget</zorder>
+   <zorder>frame</zorder>
+   <zorder>frame_2</zorder>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>leMapId</tabstop>
+  <tabstop>leMapX</tabstop>
+  <tabstop>leMapY</tabstop>
+  <tabstop>leMapZ</tabstop>
+  <tabstop>leHomeId</tabstop>
+  <tabstop>leHomeX</tabstop>
+  <tabstop>leHomeY</tabstop>
+  <tabstop>leHomeZ</tabstop>
+  <tabstop>le0</tabstop>
+  <tabstop>le1</tabstop>
+  <tabstop>le2</tabstop>
+  <tabstop>le3</tabstop>
+  <tabstop>le4</tabstop>
+  <tabstop>le5</tabstop>
+  <tabstop>le6</tabstop>
+  <tabstop>le7</tabstop>
+  <tabstop>le8</tabstop>
+  <tabstop>le9</tabstop>
+  <tabstop>le10</tabstop>
+  <tabstop>le11</tabstop>
+  <tabstop>leStrongHoldX</tabstop>
+  <tabstop>leStrongHoldZ</tabstop>
+  <tabstop>lePicture</tabstop>
+  <tabstop>leLocation</tabstop>
+  <tabstop>leBookAndQuill</tabstop>
+  <tabstop>leBookShelf</tabstop>
+  <tabstop>leStart</tabstop>
+  <tabstop>btnClose</tabstop>
+  <tabstop>btnMin</tabstop>
+  <tabstop>btnMapSave</tabstop>
+  <tabstop>ptxBookAndQuill</tabstop>
+  <tabstop>btnStart</tabstop>
+  <tabstop>btnMapFile</tabstop>
+  <tabstop>btnBAQBook</tabstop>
+  <tabstop>tbBook</tabstop>
+  <tabstop>btnPaper</tabstop>
+  <tabstop>btnBack</tabstop>
+  <tabstop>btnHomeFile</tabstop>
+  <tabstop>btnMap</tabstop>
+  <tabstop>btnEndPortal</tabstop>
+  <tabstop>btnSign</tabstop>
+  <tabstop>btnFile_1</tabstop>
+  <tabstop>btnLandStoneSave</tabstop>
+  <tabstop>btnPortalHelp</tabstop>
+  <tabstop>btnBookAndQuill</tabstop>
+  <tabstop>btnBook</tabstop>
+  <tabstop>btnAnvil</tabstop>
+  <tabstop>btnInk</tabstop>
+  <tabstop>btnPainting</tabstop>
+  <tabstop>btnCompass</tabstop>
+  <tabstop>btnEyeOfEnder</tabstop>
+  <tabstop>btnFile_3</tabstop>
+  <tabstop>btnFile_4</tabstop>
+  <tabstop>btnWiki</tabstop>
+  <tabstop>btnPaper_2</tabstop>
+  <tabstop>btnPaper_3</tabstop>
+  <tabstop>btnPaper_4</tabstop>
+  <tabstop>btnBookShelf</tabstop>
+  <tabstop>btnFile_5</tabstop>
+  <tabstop>btnFile_2</tabstop>
+ </tabstops>
+ <resources>
+  <include location="assets/resource.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btnMin</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>718</x>
+     <y>43</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>847</x>
+     <y>111</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnClose</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>754</x>
+     <y>35</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>913</x>
+     <y>82</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
