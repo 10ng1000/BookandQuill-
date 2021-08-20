@@ -19,11 +19,11 @@ VS_VERSION_INFO VERSIONINFO
 			BEGIN
 				VALUE "CompanyName", "10ng\0"
 				VALUE "FileDescription", "\0"
-				VALUE "FileVersion", "0.1.1.0\0"
+				VALUE "FileVersion", "0.1.2.0\0"
 				VALUE "LegalCopyright", "\0"
 				VALUE "OriginalFilename", "BookandQuill.exe\0"
 				VALUE "ProductName", "BookandQuill++\0"
-				VALUE "ProductVersion", "0.1.1.0\0"
+				VALUE "ProductVersion", "0.1.2.0\0"
 				VALUE "InternalName", "\0"
 				VALUE "Comments", "Minecrafter书和笔。\0"
 				VALUE "LegalTrademarks", "\0"

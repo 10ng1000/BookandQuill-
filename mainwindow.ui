@@ -255,7 +255,7 @@ QWidget#pageAnvil QPushButton{
 }</string>
     </property>
     <property name="currentIndex">
-     <number>5</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="pagePainting">
      <widget class="QLabel" name="labelRecentPicture1">

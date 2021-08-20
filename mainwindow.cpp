@@ -204,6 +204,7 @@ void MainWindow::saveDoc(QString texts[],const QString &dir, const QString &path
     QSettings settings;
     QFile file;
     if(isCover && settings.contains(path)){
+        //qDebug() << settings.value(path).toString();
         file.setFileName(settings.value(path).toString());
         if(file.open(QIODevice::ExistingOnly|QIODevice
                   ::WriteOnly|QIODevice::Append|QIODevice::Text)){
@@ -214,9 +215,7 @@ void MainWindow::saveDoc(QString texts[],const QString &dir, const QString &path
 
     QString fileName;
     getFolder(dir,fileName);
-    if(!settings.contains(path)){
-        settings.setValue(path,fileName);
-    }
+    settings.setValue(path,fileName);
     file.setFileName(fileName);
     file.open(QIODevice::NewOnly|QIODevice
               ::WriteOnly|QIODevice::Append|QIODevice::Text);
@@ -513,7 +512,9 @@ void MainWindow::on_btnBookShelf_clicked()
     if(!settings.contains("dir/bookShelfDir")){
         return;
     }
-    QDesktopServices::openUrl(settings.value("dir/bookShelfDir").toString());
+    qDebug() << settings.value("dir/bookShelfDir").toString();
+    QUrl *url = new QUrl(settings.value("dir/bookShelfDir").toString());
+    QDesktopServices::openUrl(*url);
 }
 
 
